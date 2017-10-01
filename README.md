@@ -21,6 +21,7 @@ Redis通常被称为数据结构服务器，因为值（value）可以是 字符
 
 <h3>Redis安装配置</h3>  
 <p>语法:</p><br />
+
 >redis 127.0.0.1:6379> CONFIG GET CONFIG_SETTING_NAME   
 >redis 127.0.0.1:6379> CONFIG SET CONFIG_SETTING_NAME NEW_CONFIG_VALUE   
 >$redis-cli   
@@ -28,30 +29,36 @@ Redis通常被称为数据结构服务器，因为值（value）可以是 字符
 >$redis-cli -h host -p port -a password
 
 <h3>Redis常用命令</h3>
+
 >redis 127.0.0.1:6379> COMMAND KEY_NAME
 
 <p>Redis 字符串命令</p><br />
+
 >redis 127.0.0.1:6379> SET runoobkey redis
 >redis 127.0.0.1:6379> GET runoobkey
 >redis 127.0.0.1:6379> DEL runoobkey
 
 <p>Redis hash 命令</p><br />
+
 >redis 127.0.0.1:6379>  HMSET runoobkey name "redis tutorial" description "redis basic commands for caching" likes 20 visitors 23000
 >redis 127.0.0.1:6379>  HGETALL runoobkey
 
 <p>Redis 列表命令</p><br />
+
 >redis 127.0.0.1:6379>LPUSH runoobkey redis
 >redis 127.0.0.1:6379>LPUSH runoobkey mongodb
 >redis 127.0.0.1:6379> LPUSH runoobkey mysql
 >redis 127.0.0.1:6379> LRANGE runoobkey 0 10
 
 <p>Redis 集合命令</p><br />
+
 >redis 127.0.0.1:6379> SADD runoobkey redis
 >redis 127.0.0.1:6379> SADD runoobkey mongodb
 >redis 127.0.0.1:6379> SADD runoobkey mysql
 >redis 127.0.0.1:6379> SMEMBERS runoobkey
 
 <p>Redis 有序集合命令</p><br />
+
 >redis 127.0.0.1:6379> ZADD runoobkey 1 redis
 >redis 127.0.0.1:6379> ZADD runoobkey 2 mongodb
 >redis 127.0.0.1:6379> ZADD runoobkey 3 mysql
@@ -59,11 +66,13 @@ Redis通常被称为数据结构服务器，因为值（value）可以是 字符
 >redis 127.0.0.1:6379> ZRANGE runoobkey 0 10 WITHSCORES
 
 <h3>Redis 发布订阅命令</h3>
+
 >redis 127.0.0.1:6379> SUBSCRIBE redisChat
 >redis 127.0.0.1:6379> PUBLISH redisChat "Redis is a great caching technique"
 >redis 127.0.0.1:6379> PUBLISH redisChat "Learn redis by runoob.com"
 
 <h3>Redis 事务命令</h3>
+
 >redis 127.0.0.1:6379> MULTI
 >redis 127.0.0.1:6379> SET book-name "Mastering C++ in 21 days"
 >redis 127.0.0.1:6379> GET book-name
@@ -72,10 +81,12 @@ Redis通常被称为数据结构服务器，因为值（value）可以是 字符
 >redis 127.0.0.1:6379> EXEC
 
 <h3>Redis 连接命令</h3>
+
 >redis 127.0.0.1:6379> AUTH "password"
 >redis 127.0.0.1:6379> PING
 
 <h3>Redis 服务器命令</h3>
+
 >redis 127.0.0.1:6379> INFO
 
 <h3>Memcached安装配置</h3>

@@ -3,9 +3,9 @@
 
 
 ##2017-9-29
-Redis安装配置
-Redis常用命令
+1.Redis安装配置
+2.Redis常用命令
 
-Memcached安装配置
-比较
+3.Memcached安装配置
+4.比较
 

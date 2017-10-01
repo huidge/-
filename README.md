@@ -21,12 +21,13 @@ Redis通常被称为数据结构服务器，因为值（value）可以是 字符
 
 <h3>Redis安装配置</h3>  
 <p>语法:</p><br />
-``redis 127.0.0.1:6379> CONFIG GET CONFIG_SETTING_NAME   
-``redis 127.0.0.1:6379> CONFIG SET CONFIG_SETTING_NAME NEW_CONFIG_VALUE   
-``redis-cli   
-``redis 127.0.0.1:6379> PING   
-``redis
-``
+
+>redis 127.0.0.1:6379> CONFIG GET CONFIG_SETTING_NAME   
+>redis 127.0.0.1:6379> CONFIG SET CONFIG_SETTING_NAME NEW_CONFIG_VALUE   
+>redis-cli   
+>redis 127.0.0.1:6379> PING   
+>redis
+>
 
 <h3>Redis常用命令</h3>
 

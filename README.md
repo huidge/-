@@ -20,7 +20,7 @@ Redis通常被称为数据结构服务器，因为值（value）可以是 字符
 </ul>
 
 <h3>Redis安装配置</h3>  
-<p>语法:</p><br />
+<p>语法:</p>
 
 >redis 127.0.0.1:6379> CONFIG GET CONFIG_SETTING_NAME   
 >redis 127.0.0.1:6379> CONFIG SET CONFIG_SETTING_NAME NEW_CONFIG_VALUE   
@@ -32,32 +32,32 @@ Redis通常被称为数据结构服务器，因为值（value）可以是 字符
 
 >redis 127.0.0.1:6379> COMMAND KEY_NAME
 
-<p>Redis 字符串命令</p>
+<h3>Redis 字符串命令</h3>
 
 >redis 127.0.0.1:6379> SET runoobkey redis   
 >redis 127.0.0.1:6379> GET runoobkey   
 >redis 127.0.0.1:6379> DEL runoobkey   
 
-<p>Redis hash 命令</p>
+<h3>Redis hash 命令</h3>
 
->redis 127.0.0.1:6379>  HMSET runoobkey name "redis tutorial"    description "redis basic commands for caching" likes 20 visitors    23000
+>redis 127.0.0.1:6379>  HMSET runoobkey name "redis tutorial"    description "redis basic commands for caching" likes 20 visitors    23000   
 >redis 127.0.0.1:6379>  HGETALL runoobkey   
 
-<p>Redis 列表命令</p>
+<h3>Redis 列表命令</h3>
 
 >redis 127.0.0.1:6379>LPUSH runoobkey redis   
 >redis 127.0.0.1:6379>LPUSH runoobkey mongodb   
 >redis 127.0.0.1:6379> LPUSH runoobkey mysql   
 >redis 127.0.0.1:6379> LRANGE runoobkey 0 10   
 
-<p>Redis 集合命令</p>
+<h3>Redis 集合命令</h3>
 
 >redis 127.0.0.1:6379> SADD runoobkey redis   
 >redis 127.0.0.1:6379> SADD runoobkey mongodb   
 >redis 127.0.0.1:6379> SADD runoobkey mysql   
 >redis 127.0.0.1:6379> SMEMBERS runoobkey   
 
-<p>Redis 有序集合命令</p>
+<h3>Redis 有序集合命令</h3>
 
 >redis 127.0.0.1:6379> ZADD runoobkey 1 redis   
 >redis 127.0.0.1:6379> ZADD runoobkey 2 mongodb   
@@ -91,7 +91,10 @@ Redis通常被称为数据结构服务器，因为值（value）可以是 字符
 <h3>Memcached安装配置</h3>
 
 <h3>比较</h3>
-
+<ul>
+<li>Redis有着更为复杂的数据结构并且提供对他们的原子性操作，这是一个不同于其他数据库的进化路径。Redis的数据类型都是基于基本数据结构的同时对程序员透明，无需进行额外的抽象。</li>
+<li>Redis运行在内存中但是可以持久化到磁盘，所以在对不同数据集进行高速读写时需要权衡内存，因为数据量不能大于硬件内存。在内存数据库方面的另一个优点是，相比在磁盘上相同的复杂的数据结构，在内存中操作起来非常简单，这样Redis可以做很多内部复杂性很强的事情。同时，在磁盘格式方面他们是紧凑的以追加的方式产生的，因为他们并不需要进行随机访问。</li>
+</ul>
 <br />
 
 <h2>2017-9-30</h2>

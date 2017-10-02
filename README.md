@@ -136,13 +136,13 @@ Redis通常被称为数据结构服务器，因为值（value）可以是 字符
 <p>使用当前目录作为Git仓库，我们只需使它初始化。</p>
 
 >git init   
->//指定目录作为Git仓库
->git init newrepo
->$ git add .
->$ git add README
->$ git commit -m '初始化项目版本'
->//克隆仓库的命令格式为：
->git clone <repo> <directory>
+>//指定目录作为Git仓库   
+>git init newrepo   
+>$ git add .   
+>$ git add README   
+>$ git commit -m '初始化项目版本'   
+>//克隆仓库的命令格式为：   
+>git clone <repo> <directory>   
 
 
 <h3>基本操作</h3>

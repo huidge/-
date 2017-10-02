@@ -106,8 +106,8 @@ Redis通常被称为数据结构服务器，因为值（value）可以是 字符
 
 <h2>2017-9-30</h2>
 <h3>Git与SVN的区别</h3>
-<p>GIT不仅仅是个版本控制系统，它也是个内容管理系统(CMS),工作管理系统等。</p>
-<p>如果你是一个具有使用SVN背景的人，你需要做一定的思想转换，来适应GIT提供的一些概念和特征。Git 与 SVN 区别点：</p>
+<p>GIT不仅仅是个版本控制系统，它也是个内容管理系统(CMS),工作管理系统等。</p><br />
+<p>如果你是一个具有使用SVN背景的人，你需要做一定的思想转换，来适应GIT提供的一些概念和特征。Git 与 SVN 区别点：</p><br />
 <ol>
 <li>GIT是分布式的，SVN不是：这是GIT和其它非分布式的版本控制系统，例如SVN，CVS等，最核心的区别。</li>
 <li>GIT把内容按元数据方式存储，而SVN是按文件：所有的资源控制系统都是把文件的元信息隐藏在一个类似.svn,.cvs等的文件夹里。</li>
@@ -125,7 +125,13 @@ Redis通常被称为数据结构服务器，因为值（value）可以是 字符
 >$ git config --list
 
 <h3>工作流程</h3>
-
+<img src="http://www.runoob.com/wp-content/uploads/2015/02/git-process.png"></img>
+<h3>工作区、暂存区和版本库</h3>
+<ul>
+<li><strong>工作区</strong>：就是你在电脑里能看到的目录。</li>
+<li><strong>暂存区</strong>：英文叫stage, 或index。一般存放在 ".git目录下" 下的index文件（.git/index）中，所以我们把暂存区有时也叫作索引（index）。</li>
+<li><strong>版本库</strong>：工作区有一个隐藏目录.git，这个不算工作区，而是Git的版本库。</li>
+</ul>
 <h3>创建仓库</h3>
 
 

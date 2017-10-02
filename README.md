@@ -187,6 +187,18 @@ Redis通常被称为数据结构服务器，因为值（value）可以是 字符
 
 <h3>github相关</h3>
 
+>//添加一个新的远程仓库   
+>git remote add [shortname] [url]   
+>//生成SSH Key   
+>$ ssh-keygen -t rsa -C "huidge@outlook.com"   
+>//验证是否成功   
+>$ ssh -T git@github.com   
+>git remote   
+>git remote -v   
+>git fetch   
+>git merge   
+>git push [alias] [branch]   
+>git remote rm [别名]   
 
 <h3>Git服务器搭建</h3>
 

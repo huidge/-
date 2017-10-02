@@ -133,6 +133,16 @@ Redis通常被称为数据结构服务器，因为值（value）可以是 字符
 <li><strong>版本库</strong>：工作区有一个隐藏目录.git，这个不算工作区，而是Git的版本库。</li>
 </ul>
 <h3>创建仓库</h3>
+<p>使用当前目录作为Git仓库，我们只需使它初始化。</p>
+
+>git init   
+>//指定目录作为Git仓库
+>git init newrepo
+>$ git add .
+>$ git add README
+>$ git commit -m '初始化项目版本'
+>//克隆仓库的命令格式为：
+>git clone <repo> <directory>
 
 
 <h3>基本操作</h3>

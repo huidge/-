@@ -180,6 +180,10 @@ Redis通常被称为数据结构服务器，因为值（value）可以是 字符
 
 <h3>Git查看提交历史</h3>
 
+>$git log   
+>$git log --online   
+>$git log --online --graph   
+>$ git log --reverse --oneline   
 
 <h3>github相关</h3>
 

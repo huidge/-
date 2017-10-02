@@ -117,7 +117,11 @@ Redis通常被称为数据结构服务器，因为值（value）可以是 字符
 </ol>
 
 <h3>Git安装配置</h3>
-
+<p>配置个人的用户名称和电子邮件地址：</p>
+>$ git config --global user.name "huidge"  
+>$ git config --global user.email huidge@outlook.com  
+>//查看配置信息
+>$ git config --list
 
 <h3>工作流程</h3>
 

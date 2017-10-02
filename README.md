@@ -142,10 +142,25 @@ Redis通常被称为数据结构服务器，因为值（value）可以是 字符
 >$ git add README   
 >$ git commit -m '初始化项目版本'   
 >//克隆仓库的命令格式为：   
->git clone <repo> <directory>   
-
+>git clone (repo) (directory)
 
 <h3>基本操作</h3>
+
+>$ mkdir huidge   
+>cd huidge   
+> git clone [url]   
+>ls -a   
+>git add .    
+>touch README   
+>vim README   
+>$ git add README hello.php    
+>$ git status -s   
+>$ vim README   
+>$ git diff   
+>git commit -a   
+>$ git reset HEAD --hello.php    
+>rm 'hello.php'   
+>$ git mv README  README.md   
 
 <h3>分支管理</h3>
 

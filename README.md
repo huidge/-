@@ -106,8 +106,8 @@ Redis通常被称为数据结构服务器，因为值（value）可以是 字符
 
 <h2>2017-9-30</h2>
 <h3>Git与SVN的区别</h3>
-<p>GIT不仅仅是个版本控制系统，它也是个内容管理系统(CMS),工作管理系统等。</p><br />
-<p>如果你是一个具有使用SVN背景的人，你需要做一定的思想转换，来适应GIT提供的一些概念和特征。Git 与 SVN 区别点：</p><br />
+<p>GIT不仅仅是个版本控制系统，它也是个内容管理系统(CMS),工作管理系统等。</p>
+<p>如果你是一个具有使用SVN背景的人，你需要做一定的思想转换，来适应GIT提供的一些概念和特征。Git 与 SVN 区别点：</p>
 <ol>
 <li>GIT是分布式的，SVN不是：这是GIT和其它非分布式的版本控制系统，例如SVN，CVS等，最核心的区别。</li>
 <li>GIT把内容按元数据方式存储，而SVN是按文件：所有的资源控制系统都是把文件的元信息隐藏在一个类似.svn,.cvs等的文件夹里。</li>
@@ -121,7 +121,7 @@ Redis通常被称为数据结构服务器，因为值（value）可以是 字符
 
 >$ git config --global user.name "huidge"  
 >$ git config --global user.email huidge@outlook.com  
->//查看配置信息
+>//查看配置信息   
 >$ git config --list
 
 <h3>工作流程</h3>

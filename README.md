@@ -301,14 +301,12 @@ Redis通常被称为数据结构服务器，因为值（value）可以是 字符
 <h3>Bootstrap CSS概览</h3>
 <h3>移动设备优先</h3>
 
->
-><meta name="viewport" content="width=device-width, initial-scale=1.0">   
+><meta name="viewport" content="width=device-width, initial-scale=1.0">    
 >//禁用缩放功能后，用户只能滚动屏幕，就能让您的网站看上去更像原生应用的感觉。   
 ><meta name="viewport" content="width=device-width,    
-                                     initial-scale=1.0,    
-                                     maximum-scale=1.0,    
-                                     user-scalable=no">   
->
+>                                     initial-scale=1.0,    
+>                                     maximum-scale=1.0,    
+>                                     user-scalable=no">   
 
 <h3>响应式图像</h3>
 

@@ -297,3 +297,44 @@ Redis通常被称为数据结构服务器，因为值（value）可以是 字符
 <p></p>
 
 
+<h2>2017-10-5</h2>
+<h3>Bootstrap CSS概览</h3>
+<h3>移动设备优先</h3>
+
+><meta name="viewport" content="width=device-width, initial-scale=1.0">
+>//禁用缩放功能后，用户只能滚动屏幕，就能让您的网站看上去更像原生应用的感觉。
+><meta name="viewport" content="width=device-width, 
+                                     initial-scale=1.0, 
+                                     maximum-scale=1.0, 
+                                     user-scalable=no">
+
+<h3>响应式图像</h3>
+
+><img src="..." class="img-responsive" alt="响应式图像">
+
+<h3>全局显示、排版和链接</h3>
+
+>body {
+> font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+> font-size: 14px;
+> line-height: 1.428571429;
+> color: #333333;
+> background-color: #ffffff;
+>}
+
+<h4>排版</h4>
+<p>使用 @font-family-base、 @font-size-base 和 @line-height-base 属性作为排版样式。</p>
+<h4>链接样式</h4>
+
+>a:hover,
+>a:focus {
+>  color: #2a6496;
+>  text-decoration: underline;
+>}
+>a:focus {
+>  outline: thin dotted #333;
+>  outline: 5px auto -webkit-focus-ring-color;
+>  outline-offset: -2px;
+>}
+
+<h4>避免跨浏览器的不一致</h4>

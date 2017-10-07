@@ -7,7 +7,20 @@
 <h2>2017-9-27</h2>
 
 <h2>2017-9-28</h2>
-
+<h3>React总结笔记</h3>
+<ol>
+	<li>组件类的第一个字母必须大写。</li>
+	<li>组件类只能包含一个顶层标签。</li>
+	<li>组件用法与原生标签完全一致，可以任意加入属性，组件的属性可以在组件类的this.props对象上获取。</li>
+	<li>所有的组件必须有自己的render方法，用于输出组件。</li>	
+	<li>JSX允许直接在模板插入javascript变量，如果变量是数组，则会展开这个数组的成员。</li>
+	<li>render方法用于将模板转为html语言，并插入指定的DOM节点。</li>
+	<li>凡是用到JS的地方，都要加上type="text/babel"</li>
+	<li>添加组件属性，命名不能使用保留字，class->className,for->htmlFor。</li>
+	<li>this.props对象的属性与组件的属性一一对应，this.props.children表示所有的子节点（当前组件没有子节点，它为undefined;有一个子节点，数据类型为object；有多个子节点，类型是array）React.Children方法处理this.children,React.Children.map来遍历子节点。</li>
+	<li>组件类的PropTypes属性，用来验证组件实例的属性是否符合要求。</li>
+	<li>从组件获取真实DOM节点，要用到ref属性，为真实DOM添加一个ref属性，然后this.refs.[refName]就会返回真实的DOM节点。</li>
+</ol>
 <h2>2017-9-29</h2>
 Redis通常被称为数据结构服务器，因为值（value）可以是 字符串(String), 哈希(Map), 列表(list), 集合(sets) 和 有序集合(sorted sets)等类型。
 
@@ -301,7 +314,7 @@ Redis通常被称为数据结构服务器，因为值（value）可以是 字符
 <h3>Bootstrap CSS概览</h3>
 <h3>移动设备优先</h3>
 
-`<meta name="viewport" content="width=device-width, initial-scale=1.0">    
+`<meta name="viewport" content="width=device-width, initial-scale=1.0">     
 `//禁用缩放功能后，用户只能滚动屏幕，就能让您的网站看上去更像原生应用的感觉。   
 `<meta name="viewport" content="width=device-width,    
 `                                     initial-scale=1.0,    
@@ -338,3 +351,5 @@ Redis通常被称为数据结构服务器，因为值（value）可以是 字符
 >}   
 
 <h4>避免跨浏览器的不一致</h4>
+
+<h3>Bootstrap 网格系统</h3>

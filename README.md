@@ -361,7 +361,7 @@ Redis通常被称为数据结构服务器，因为值（value）可以是 字符
 			<p>统一管理jar包</p>
 			下载、配置环境变量MAVEN_HOME、MAVEN_OPTS、path
 
->//验证是否安装成功
+>//验证是否安装成功   
 >mvn -v    
 
 <h3>了解Maven仓库</h3> 
@@ -401,9 +401,15 @@ Redis通常被称为数据结构服务器，因为值（value）可以是 字符
    <li>使用sourcemap快速定位错误来源。</li> 配置 devtool:inline-source-map 
    <li>工具</li> 
    <ul> 
-    <li>使用观察者模式 ;watch;:;webpack --watch;</li> 
-    <li>webpack-dev-server  devserver:{contentBase:'./dist'}</li> 
-    <li>webpack-dev-middleware  publicPath:'/'   server.js  "server":"node server.js"  "start":"webpack-dev-server --open"</li> 
+    <li>使用观察者模式
+     "watch":"webpack --watch"</li> 
+    <li>webpack-dev-server <br/>
+    devserver:{contentBase:'./dist'}</li> 
+    <li>webpack-dev-middleware <br/>
+    publicPath:'/'  <br/>
+    server.js  <br/>
+ 	"server":"node server.js" <br/>
+  	"start":"webpack-dev-server --open"</li> 
     <ul> 
     </ul>
    </ul>
@@ -426,8 +432,10 @@ Redis通常被称为数据结构服务器，因为值（value）可以是 字符
    </ul> 
    <li>npm Scripts</li> 
    <ul> 
-    <li>开发环境脚本 npm start "start":"webpack-dev-server --open --config webpack.dev.js"</li> 
-    <li>生产环境脚本 npm run build "build":"webpack --config webpack.prod.js"</li> 
+    <li>开发环境脚本 npm start <br/>
+     "start":"webpack-dev-server --open --config webpack.dev.js"</li> 
+    <li>生产环境脚本 npm run build  <br/>
+    "build":"webpack --config webpack.prod.js"</li> 
    </ul> 
    <li>Minification代码压缩</li> 
    <li>souremap</li> 

@@ -378,8 +378,8 @@ Redis通常被称为数据结构服务器，因为值（value）可以是 字符
 <h2>2017-10-10（2）</h2> 
 <h3>webpack安装、起步</h3> 
 
->webpack --config webpack.config.js 
->npm run build 
+>webpack --config webpack.config.js   
+>npm run build   
 
 <p>配置文件webpack.config.js (注意：拼写、嵌套关系，最后一项不能加逗号) </p>
 
@@ -402,8 +402,8 @@ Redis通常被称为数据结构服务器，因为值（value）可以是 字符
    <li>工具</li> 
    <ul> 
     <li>使用观察者模式 ;watch;:;webpack --watch;</li> 
-    <li>webpack-dev-server devserver:{contentBase:'./dist'}</li> 
-    <li>webpack-dev-middleware publicPath:'/' server.js ;server;:;node server.js; ;start;:;webpack-dev-server --open;</li> 
+    <li>webpack-dev-server  devserver:{contentBase:'./dist'}</li> 
+    <li>webpack-dev-middleware  publicPath:'/'   server.js  "server":"node server.js"  "start":"webpack-dev-server --open"</li> 
     <ul> 
     </ul>
    </ul>
@@ -426,8 +426,8 @@ Redis通常被称为数据结构服务器，因为值（value）可以是 字符
    </ul> 
    <li>npm Scripts</li> 
    <ul> 
-    <li>开发环境脚本 npm start ;start;:;webpack-dev-server --open --config webpack.dev.js;</li> 
-    <li>生产环境脚本 npm run build ;build;:;webpack --config webpack.prod.js;</li> 
+    <li>开发环境脚本 npm start "start":"webpack-dev-server --open --config webpack.dev.js"</li> 
+    <li>生产环境脚本 npm run build "build":"webpack --config webpack.prod.js"</li> 
    </ul> 
    <li>Minification代码压缩</li> 
    <li>souremap</li> 

@@ -354,15 +354,16 @@ Redis通常被称为数据结构服务器，因为值（value）可以是 字符
 
 <h3>Bootstrap 网格系统</h3>
 
-<h2 id="section-8">2017-10-10</h2>
+<h2>2017-10-10(1)</h2>
 <h3>Maven安装配置</h3>
 <strong>用途：</strong>
 			<p>统一开发规范和工具</p>
 			<p>统一管理jar包</p>
 			下载、配置环境变量MAVEN_HOME、MAVEN_OPTS、path
-			
-			>//验证是否安装成功
-			>mvn -v    
+
+>//验证是否安装成功
+>mvn -v    
+
 <h3>了解Maven仓库</h3> 
 <p>默认在C:Users\用户名\.m2目录下</p>
 
@@ -373,3 +374,63 @@ Redis通常被称为数据结构服务器，因为值（value）可以是 字符
 <h3>eclipse配置maven</h3>
 <h3>创建maven项目</h3>
 
+
+<h2>2017-10-10（2）</h2> 
+<h3>webpack安装、起步</h3> 
+
+>webpack --config webpack.config.js 
+>npm run build 
+
+<p>配置文件webpack.config.js (注意：拼写、嵌套关系，最后一项不能加逗号) </p>
+
+<h3>管理资源</h3> 
+<ol> 
+   <li>加载css: style-loader css-loader</li> 
+   <li>加载图片: file-loader</li> 
+   <li>加载字体: file-loader url-loader</li> 
+   <li>加载数据: csv-loader xml-loader</li> 
+  </ol> 
+<h3>管理输出</h3> 
+<ol> 
+   <li>设定HtmlWebpackPlugin创建全新文件，所有bundle自动添加</li> 
+   <li>清理/dist文件夹，clean-webpack-plugin</li> 
+   <li>WebpackManifestPlugin:直接将数据提取到一个json文件，以供使用</li> 
+  </ol> 
+<h3>开发</h3> 
+<ol> 
+   <li>使用sourcemap快速定位错误来源。</li> 配置 devtool:inline-source-map 
+   <li>工具</li> 
+   <ul> 
+    <li>使用观察者模式 ;watch;:;webpack --watch;</li> 
+    <li>webpack-dev-server devserver:{contentBase:'./dist'}</li> 
+    <li>webpack-dev-middleware publicPath:'/' server.js ;server;:;node server.js; ;start;:;webpack-dev-server --open;</li> 
+    <ul> 
+    </ul>
+   </ul>
+  </ol> 
+<h3>模块热替换</h3> 
+<ol> 
+   <li>启用HMR，修改配置文件（只在开发环境使用）</li> 
+   <li>HMR修改样式表</li> 
+   <li>HMR与各种框架和库通过其他第三方loader平滑交互</li> 
+  </ol> 
+<h3>Tree Shaking</h3> 
+  <p>移除JavaScript上下文中未引用代码（dead-code） 通过import和export语法标识出来引用代码，添加代码压缩工具（minifier） UglifyJSPlugin</p> 
+<h3>生产环境构建</h3> 
+<ol> 
+   <li>webpack配置（webpack-merge）</li> 
+   <ul> 
+    <li>webpack.common.js 公共配置</li> 
+    <li>webpack.dev.js 开发环境配置</li> 
+    <li>webpack.prod.js 生产配置</li> 
+   </ul> 
+   <li>npm Scripts</li> 
+   <ul> 
+    <li>开发环境脚本 npm start ;start;:;webpack-dev-server --open --config webpack.dev.js;</li> 
+    <li>生产环境脚本 npm run build ;build;:;webpack --config webpack.prod.js;</li> 
+   </ul> 
+   <li>Minification代码压缩</li> 
+   <li>souremap</li> 
+   <li>指定环境</li> 
+   <li>CLI替代选项</li>
+  </ol>

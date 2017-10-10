@@ -360,13 +360,16 @@ Redis通常被称为数据结构服务器，因为值（value）可以是 字符
 			<p>统一开发规范和工具</p>
 			<p>统一管理jar包</p>
 			下载、配置环境变量MAVEN_HOME、MAVEN_OPTS、path
+			
 			>//验证是否安装成功
-			>mvn -v 
+			>mvn -v    
 <h3>了解Maven仓库</h3> 
 <p>默认在C:Users\用户名\.m2目录下</p>
->mvn help:system
+
+>mvn help:system   
+
 <img src="http://img.blog.csdn.net/20150430090440230" />
 
-		<h3>eclipse配置maven</h3>
-		<h3>创建maven项目</h3>
+<h3>eclipse配置maven</h3>
+<h3>创建maven项目</h3>
 
